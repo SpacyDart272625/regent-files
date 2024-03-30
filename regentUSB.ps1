@@ -1,13 +1,10 @@
 Clear-Host
 
-# Specify the registry path
 $registryPath = "HKLM:\SYSTEM\MountedDevices"
 
 try {
-    # Retrieve the properties from the registry
     $mountedDevicesInfo = Get-ItemProperty -Path $registryPath -ErrorAction Stop
 
-    # Display only the property names
     $script:Paused = $false
     $job = Start-Job -ScriptBlock {
         param($gridView)
