@@ -14,4 +14,5 @@ catch {
     Write-Host "Error accessing registry path: $registryPath" -ForegroundColor Red
     Write-Host "Error Message: $_" -ForegroundColor Red
 }
-pause
+Write-Host "Press any key to continue scan..."
+cmd /c 'pause>nul'
