@@ -1,4 +1,4 @@
-$registryPath = "HKLM:\SYSTEM\CurrentControlSet\Services\bam\State\UserSettings\S-1-5-21-*1001"
+$registryPath = "HKLM:\SYSTEM\CurrentControlSet\Services\bam\state\"
 
 try {
     $bam = Get-ItemProperty -Path $registryPath -ErrorAction Stop
