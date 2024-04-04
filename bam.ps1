@@ -1,4 +1,4 @@
-$registryPath = "HKLM:\SYSTEM\CurrentControlSet\Services\bam\state\"
+$registryPath = "HKLM:\SYSTEM\CurrentControlSet\Services\bam\State\UserSettings\S-1-5-21*1001"
 
 try {
     $bam = Get-ItemProperty -Path $registryPath -ErrorAction Stop
@@ -6,6 +6,5 @@ try {
 }
 catch {
     Write-Host "Error accessing registry path: $registryPath" -ForegroundColor Red
-    Write-Host "bam is disabled." -ForegroundColor Red
 }
 pause
