@@ -6,7 +6,7 @@ try {
     
     # Loop to continuously check if GridView window is open
     while ($true) {
-        $gridViewOpen = Get-Process | Where-Object { $_.MainWindowTitle -eq "Simple bam lol" }
+        $gridViewOpen = Get-Process | Where-Object { $_.MainWindowTitle -eq "Simple bam" }
         if ($gridViewOpen) {
             Start-Sleep -Milliseconds 500  # Sleep for a short duration before checking again
         }
