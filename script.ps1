@@ -1,6 +1,6 @@
 Clear-Host
 
-$pattern = "clicker|nitr0|reach|imgui|destruct"
+$pattern = "autoclick, nitr0, undisputed, cnd, horion, injector, invalid"
 
 Get-ChildItem -Recurse | ForEach-Object {
     Select-String -Pattern $pattern -Path $_.FullName | ForEach-Object {
