@@ -1,1 +1,1 @@
-ass scripts.
+ass script.
